@@ -68,6 +68,8 @@ int main(int argc, int **argv)
     int shmid;
     key_t shm_key,sem1_key,sem2_key;
     union Semun semun;
+while (1)
+{
 
     sem1_key = ftok("sem1", 2);              
     sem2_key = ftok("sem2", 3);              
@@ -117,6 +119,8 @@ int main(int argc, int **argv)
     conv(input,256);
     strcpy(shmaddr, input);
     up(sem2);
+
+}
 
 
 }

@@ -122,4 +122,5 @@ int main(int argc, int **argv)
     down(sem2);
     // Print result
     printf("Processed string: %s\n", shmaddr);
+
 }
